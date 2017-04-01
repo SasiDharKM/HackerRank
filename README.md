@@ -1,2 +1,2 @@
 # HackerRank
-A Repo to store my solution to hackerrank solutions
+A Repo to store my solution for the hackerrank problems

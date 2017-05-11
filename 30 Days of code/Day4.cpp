@@ -1,3 +1,10 @@
+/*input
+4
+-1
+10
+16
+18
+*/
 using namespace std;
 #include <iostream>
 

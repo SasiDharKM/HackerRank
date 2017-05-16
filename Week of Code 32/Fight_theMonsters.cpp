@@ -5,11 +5,14 @@ using namespace std;
 int getMaxMonsters(int n, int hit, int t, vector < int > h){
     // Complete this function
     sort(h.begin(),h.end());
-    int count=0;
-    while(t--){
-        h[count]-=hit;
-        if(h[count]<=0)
-            count++;
+    int count=0,i=0;   
+    while(t > 0 && i<n){
+        int time = (int)ceil((double)h[i]/hit);
+        t-=time;
+        if(t<0)
+            break;
+        i++;
+        count++;
     }
     return count;
 }
